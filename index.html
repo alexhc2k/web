@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>IL Forno — Pizzería & Restaurante · Villarrobledo</title>
+  <link rel="icon" type="image/png" href="FOTOS/LOGO-ULTIMO.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Raleway:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo"><img src="FOTOS/LOGO-ULTIMO.png" alt="Logo" class="nav-logo" height="40px"></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#carta">Carta</a></li>
+      <li><a href="#vinos">Vinos</a></li>
+      <li><a href="#delivery">A Domicilio</a></li>
+      <li><a href="#alergenos">Alérgenos</a></li>
+      <li><a href="#como-llegar">Cómo llegar</a></li>
+    </ul>
+    <a href="tel:+34967140681" class="nav-cta">☎ Reservar mesa</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero-section">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="FOTOS/logo-hero.png" alt="Il Forno" class="hero-logo">
+      <p class="hero-sub">Pizzería &nbsp;&middot;&nbsp; Restaurante &nbsp;&middot;&nbsp; Horno de Leña</p>
+      <div class="hero-actions">
+        <a href="#carta" class="btn-primary">Ver la carta</a>
+        <a href="#como-llegar" class="btn-ghost">Información</a>
+      </div>
+      <div class="hero-badge">Toda la carta también a domicilio</div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip-bar">
+    <div class="strip-track">
+      <span class="strip-item">🕐 13:00–16:00 y 20:00–23:30</span>
+      <span class="strip-item">🛵 Servicio a domicilio</span>
+      <span class="strip-item">🍕 Más de 30 variedades de pizza</span>
+      <span class="strip-item">🍷 Carta de vinos seleccionada</span>
+      <span class="strip-item">🕐 13:00–16:00 y 20:00–23:30</span>
+      <span class="strip-item">🛵 Servicio a domicilio</span>
+      <span class="strip-item">🍕 Más de 30 variedades de pizza</span>
+      <span class="strip-item">🍷 Carta de vinos seleccionada</span>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="categories" id="carta" style="overflow:hidden">
+    <div class="container">
+      <div class="cat-header reveal">
+        <span class="section-label" style="display:block;text-align:center">Nuestra carta</span>
+        <h2>Todo lo que <em>necesitas</em></h2>
+        <p>Haz clic en una categoría para ver los platos</p>
+      </div>
+      <div class="cat-grid">
+        <a href="#menu-section" class="cat-card cat-card--entrantes" onclick="activateTab('entrantes')">
+          <div class="cat-img"><img src="FOTOS/entrantes_nuevo.jpg" alt="Entrantes" loading="lazy"></div>
+          <div class="cat-body">
+            <div class="cat-name">Entrantes</div>
+            <div class="cat-count">Pulpo, jamón ibérico…</div>
+          </div>
+        </a>
+        <a href="#menu-section" class="cat-card" onclick="activateTab('pizzas')">
+          <div class="cat-img"><img src="FOTOS/pizza.jpeg" alt="Pizzas" loading="lazy"></div>
+          <div class="cat-body">
+            <div class="cat-name">Pizzas</div>
+            <div class="cat-count">Más de 30 variedades</div>
+          </div>
+        </a>
+        <a href="#menu-section" class="cat-card" onclick="activateTab('carnes')">
+          <div class="cat-img"><img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=500&q=70"
+              alt="Carnes" loading="lazy"></div>
+          <div class="cat-body">
+            <div class="cat-name">Carnes</div>
+            <div class="cat-count">Brasa y plancha</div>
+          </div>
+        </a>
+        <a href="#menu-section" class="cat-card" onclick="activateTab('pescados')">
+          <div class="cat-img"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&q=70"
+              alt="Pescados" loading="lazy"></div>
+          <div class="cat-body">
+            <div class="cat-name">Pescados</div>
+            <div class="cat-count">Del mar a la mesa</div>
+          </div>
+        </a>
+        <a href="#menu-section" class="cat-card" onclick="activateTab('pasta')">
+          <div class="cat-img"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&q=70"
+              alt="Pasta" loading="lazy"></div>
+          <div class="cat-body">
+            <div class="cat-name">Pasta</div>
+            <div class="cat-count">Recetas italianas</div>
+          </div>
+        </a>
+        <a href="#menu-section" class="cat-card" onclick="activateTab('arroces')">
+          <div class="cat-img"><img src="FOTOS/arroz_nuevo.jpg"
+              alt="Arroces" loading="lazy"></div>
+          <div class="cat-body">
+            <div class="cat-name">Arroces</div>
+            <div class="cat-count">Paellas y arroces</div>
+          </div>
+        </a>
+        <a href="#menu-section" class="cat-card cat-card--postres" onclick="activateTab('postres')">
+          <div class="cat-img"><img src="FOTOS/20240611_150001.jpg" alt="Postres" loading="lazy"></div>
+          <div class="cat-body">
+            <div class="cat-name">Postres</div>
+            <div class="cat-count">Caseros y artesanales</div>
+          </div>
+        </a>
+        <a href="#vinos" class="cat-card">
+          <div class="cat-img"><img src="FOTOS/vinos.jpg" alt="Vinos" loading="lazy"></div>
+          <div class="cat-body">
+            <div class="cat-name">Vinos</div>
+            <div class="cat-count">Tintos, blancos, rosados</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="reveal-left">
+          <span class="section-label">Nuestra historia</span>
+          <h2>Más de 30 años en el corazón de<br><em>La Mancha</em></h2>
+          <p>Desde 1993 seguimos manteniendo la esencia, el esfuerzo y la dedicación del primer día. Un lugar donde el tiempo se detiene, con el inconfundible calor de nuestros hornos de leña y una amplia carta donde cada plato está elaborado con la misma ilusión de cuando todo empezó.</p>
+          <div class="about-stats">
+            <div><span class="stat-num" data-target="30">0</span><span class="stat-label">Años abiertos</span></div>
+            <div><span class="stat-num" data-target="35">0</span><span class="stat-label">Pizzas en carta</span></div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="about-card">
+            <div class="about-card-title">Horario</div>
+            <div class="about-card-sub">Restaurante &amp; Domicilio</div>
+            <div class="schedule">
+              <div class="sched-row"><span class="sched-day">Mediodía</span><span class="sched-time">13:00 –
+                  16:00</span></div>
+              <div class="sched-row"><span class="sched-day">Noche</span><span class="sched-time">20:00 – 23:30</span>
+              </div>
+              <div class="sched-row"><span class="sched-day">Todos los días</span><span
+                  class="sched-time">Abierto</span></div>
+            </div>
+            <div class="phone-block">
+              <span class="phone-block-label">Reservas y pedidos</span>
+              <a href="tel:+34967140681" class="phone-link">967 140 681</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU COMPLETO -->
+  <div class="menu-wrap" id="menu-section">
+    <div class="container">
+      <div class="menu-header">
+        <span class="section-label-light">Carta completa</span>
+        <h2>Elige tu <em>favorito</em></h2>
+      </div>
+
+
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" id="btn-entrantes" onclick="showTab('entrantes')">🫒 Entrantes</button>
+        <button class="menu-tab" id="btn-pizzas" onclick="showTab('pizzas')">🍕 Pizzas</button>
+        <button class="menu-tab" id="btn-carnes" onclick="showTab('carnes')">🥩 Carnes</button>
+        <button class="menu-tab" id="btn-pescados" onclick="showTab('pescados')">🐟 Pescados</button>
+        <button class="menu-tab" id="btn-pasta" onclick="showTab('pasta')">🍝 Pasta</button>
+        <button class="menu-tab" id="btn-arroces" onclick="showTab('arroces')">🥘 Arroces</button>
+        <button class="menu-tab" id="btn-ensaladas" onclick="showTab('ensaladas')">🥗 Ensaladas</button>
+        <button class="menu-tab" id="btn-cuchara" onclick="showTab('cuchara')">🍲 De cuchara</button>
+        <button class="menu-tab" id="btn-postres" onclick="showTab('postres')">🍮 Postres</button>
+      </div>
+
+      <!-- PIZZAS -->
+      <div id="panel-pizzas" class="menu-panel">
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Margarita</span><span class="item-price">11,00€</span></div>
+            <p class="item-desc">Tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Napolitana</span><span class="item-price">11,60€</span></div>
+            <p class="item-desc">Anchoas, aceitunas, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Siciliana</span><span class="item-price">12,00€</span></div>
+            <p class="item-desc">Anchoas, aceitunas, alcaparras, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Neptuno</span><span class="item-price">12,00€</span></div>
+            <p class="item-desc">Atún, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Borromea</span><span class="item-price">12,00€</span></div>
+            <p class="item-desc">Jamón york, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Reina</span><span class="item-price">12,20€</span></div>
+            <p class="item-desc">Jamón york, champiñón, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Pepperoni</span><span class="item-price">12,20€</span></div>
+            <p class="item-desc">Jamón york, chorizo pepperoni, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Pastora</span><span class="item-price">12,20€</span></div>
+            <p class="item-desc">Jamón york, camembert, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Tropical</span><span class="item-price">12,20€</span></div>
+            <p class="item-desc">Jamón york, piña, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Vegetal</span><span class="item-price">12,20€</span></div>
+            <p class="item-desc">Champiñón, alcaparras, alcachofas, espárragos, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">De Pollo</span><span class="item-price">12,20€</span></div>
+            <p class="item-desc">Pollo, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">De Bacon</span><span class="item-price">12,20€</span></div>
+            <p class="item-desc">Bacon, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Jamón Serrano</span><span class="item-price">12,20€</span></div>
+            <p class="item-desc">Jamón serrano, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Calzone del Chef</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Jamón york, cebolla y camembert, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Toni</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Jamón york, atún, ajo, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">De York y Bacon</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Jamón york, bacon, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">De Atún y Bacon</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Atún, bacon, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">De Setas</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Espárragos trigueros, setas, huevo, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Bolognesa</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Salsa boloñesa, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Barbacoa</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Salsa barbacoa, champiñón, bacon, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Bearnesa</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Jamón york, bechamel, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Carbonara</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Salsa carbonara, champiñón, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Guanciale</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Champiñón, cebolla, guanciale, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">IL Forno</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Jamón york, cebolla, atún, aceitunas, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Cuatro Estaciones</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Salami, jamón york, champiñón y alcachofas.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">De Kebab</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Carne kebab, salsa de estragón, lechuga y tomate natural.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">De Gambas</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Jamón york, gambas, pimiento, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">De Quesos</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Camembert, roquefort, finas hierbas y mozzarella.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Mexicana</span><span class="item-price">12,40€</span></div>
+            <p class="item-desc">Pimiento, cebolla, pollo y salsa brava, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Angelini</span><span class="item-price">13,00€</span></div>
+            <p class="item-desc">Jamón york, bacon, champiñón, salmón y gambas.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Juandini</span><span class="item-price">13,00€</span></div>
+            <p class="item-desc">Bacon, jamón serrano, alcaparras, finas hierbas y champiñón.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">De Salmón</span><span class="item-price">13,60€</span></div>
+            <p class="item-desc">Salmón, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">De Salmón con Ajos y Anchoas</span><span class="item-price">13,80€</span></div>
+            <p class="item-desc">Salmón, ajos, anchoas, tomate, queso y orégano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+        </div>
+        <p class="menu-note">Suplemento pizza individual +0,60€ · Servir con huevo +1,00€ · Servir con salmón +1,00€<br>*Todas las pizzas llevan tomate, queso y orégano</p>
+      </div>
+
+      <!-- ARROCES -->
+      <div id="panel-arroces" class="menu-panel">
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Arroz a Banda</span><span class="item-price">14,00€</span></div>
+            <p class="item-desc">Con caldo de pescado y marisco.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🐚</span> Moluscos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Arroz al Horno al Estilo de la Huerta Norte de Valencia</span><span class="item-price">14,00€</span></div>
+            <p class="item-desc">Al estilo de la huerta de Valencia.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Arroz con Chipirones, Trigueros y Gambas</span><span class="item-price">14,00€</span></div>
+            <p class="item-desc">Chipirones, espárragos trigueros y gambas.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🐚</span> Moluscos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Arroz Negro</span><span class="item-price">14,00€</span></div>
+            <p class="item-desc">Con tinta de calamar, pescado y mariscos.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🐚</span> Moluscos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Paella Mixta</span><span class="item-price">14,00€</span></div>
+            <p class="item-desc">Carne, marisco y verduras.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🐚</span> Moluscos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Arroz Caldoso de Pescado</span><span class="item-price">14,00€</span></div>
+            <p class="item-desc">Con pescado y marisco.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🐚</span> Moluscos</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="panel-carnes" class="menu-panel">
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Medallones de Cerdo a la Crema</span><span class="item-price">13,00€</span></div>
+            <p class="item-desc">Con salsa de nata.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Codillo</span><span class="item-price">15,00€</span></div>
+            <p class="item-desc">Codillo asado al horno.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Chuletas de Cordero Manchego</span><span class="item-price">16,00€</span></div>
+            <p class="item-desc">A la brasa.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Crepe de Ternera con Salteado de Verdura y Salsa de Soja</span><span class="item-price">16,00€</span></div>
+            <p class="item-desc">Con salteado de verdura y salsa de soja.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Presa de Cerdo Ibérico a la Brasa</span><span class="item-price">17,00€</span></div>
+            <p class="item-desc">A la brasa.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Saltimbocca a la Romana</span><span class="item-price">17,00€</span></div>
+            <p class="item-desc">Con salsa de champiñón.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Cordon Bleu</span><span class="item-price">17,50€</span></div>
+            <p class="item-desc">Clásico cordon bleu.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Cordon Bleu Serrano</span><span class="item-price">17,50€</span></div>
+            <p class="item-desc">Con jamón serrano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Escalope Bolognesa</span><span class="item-price">17,50€</span></div>
+            <p class="item-desc">Con salsa boloñesa.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Chuletón de Ternera Blanca</span><span class="item-price">21,00€</span></div>
+            <p class="item-desc">Ternera blanca.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Entrecot a la Brasa</span><span class="item-price">22,00€</span></div>
+            <p class="item-desc">A la brasa.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Solomillo a la Brasa</span><span class="item-price">22,00€</span></div>
+            <p class="item-desc">Solomillo de ternera.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Entrecot a la Pimienta, Camembert o Roquefort</span><span class="item-price">23,50€</span></div>
+            <p class="item-desc">A elegir la salsa.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Solomillo a la Pimienta, Camembert o Roquefort</span><span class="item-price">23,50€</span></div>
+            <p class="item-desc">A elegir la salsa.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Cordero Aranda (por encargo)</span><span class="item-price">S/M</span></div>
+            <p class="item-desc">Por encargo.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PESCADOS -->
+      <div id="panel-pescados" class="menu-panel">
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Crepe de langostinos con salteado de verduras y salsa de piquillos</span><span class="item-price">16,00€</span></div>
+            <p class="item-desc">Con salteado de verduras y salsa de piquillos.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Salmón a la Plancha</span><span class="item-price">16,00€</span></div>
+            <p class="item-desc">Con guarnición.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Bacalao Gratinado con Alioli</span><span class="item-price">17,00€</span></div>
+            <p class="item-desc">Bacalao gratinado al horno con alioli.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Lubina a la Espalda o a la Sal</span><span class="item-price">17,00€</span></div>
+            <p class="item-desc">A la espalda o a la sal.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Salmón al Cava</span><span class="item-price">17,50€</span></div>
+            <p class="item-desc">Salmón con salsa de cava.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Merluza al Horno con Gulas y Gambas</span><span class="item-price">18,00€</span></div>
+            <p class="item-desc">Con gulas y gambas.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PASTA -->
+      <div id="panel-pasta" class="menu-panel">
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Espagueti Napolitana</span><span class="item-price">8,50€</span></div>
+            <p class="item-desc">Salsa de tomate natural.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Espagueti Bolognesa</span><span class="item-price">9,00€</span></div>
+            <p class="item-desc">Ragú de carne.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Espagueti al Pesto</span><span class="item-price">9,50€</span></div>
+            <p class="item-desc">Pesto de albahaca.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🌰</span> Frutos secos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Lasaña de Carne</span><span class="item-price">9,50€</span></div>
+            <p class="item-desc">Con carne y bechamel.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Macarrones al Horno Gratinados</span><span class="item-price">9,50€</span></div>
+            <p class="item-desc">Gratinados al horno.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Canelones de la Casa con Carne</span><span class="item-price">10,00€</span></div>
+            <p class="item-desc">Receta tradicional con carne.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Canelones de Merluza y Gambas</span><span class="item-price">10,00€</span></div>
+            <p class="item-desc">Con merluza y gambas.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Espagueti Carbonara</span><span class="item-price">10,00€</span></div>
+            <p class="item-desc">Bacon, huevo y parmesano.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Espagueti con Gambas</span><span class="item-price">10,00€</span></div>
+            <p class="item-desc">Con gambas y salsa cremosa.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ENTRANTES -->
+      <div id="panel-entrantes" class="menu-panel active">
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Croqueta de Langostinos y Trufa</span><span class="item-price">2,20€/ud.</span></div>
+            <p class="item-desc">Caseras y cremosas.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Croqueta de Jamón Ibérico</span><span class="item-price">2,50€/ud.</span></div>
+            <p class="item-desc">Casera de jamón ibérico.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Pan y Tomate</span><span class="item-price">3,00€</span></div>
+            <p class="item-desc">Pan con tomate natural.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Tosta de Foie con Viruta de Pistacho y Cebolla Confitada</span><span class="item-price">7,50€</span></div>
+            <p class="item-desc">Con viruta de pistacho y cebolla confitada.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🌰</span> Frutos secos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Provolone al Horno</span><span class="item-price">8,50€</span></div>
+            <p class="item-desc">Queso provolone gratinado.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Tosta de Queso de Cabra y Confitura de Tomate</span><span class="item-price">11,00€</span></div>
+            <p class="item-desc">Con confitura de tomate.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Tabla Mixta de Paté y Queso</span><span class="item-price">11,50€</span></div>
+            <p class="item-desc">Selección de patés y quesos.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Tosta Noruega</span><span class="item-price">12,50€</span></div>
+            <p class="item-desc">Con salmón ahumado.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Revuelto de Setas con Virutas de Jamón Ibérico</span><span class="item-price">14,00€ <small>(Media 9,00€)</small></span></div>
+            <p class="item-desc">Con setas y virutas de jamón ibérico.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Jamón Serrano</span><span class="item-price">15,00€ <small>(Media 8,50€)</small></span></div>
+            <p class="item-desc">Con pan casero tostado y tomate.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Langostinos al Ajillo</span><span class="item-price">15,00€</span></div>
+            <p class="item-desc">Langostinos al ajillo.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Sepia a la Plancha</span><span class="item-price">15,00€</span></div>
+            <p class="item-desc">Sepia a la plancha.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🐚</span> Moluscos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Tempura de Langostinos con Mayonesa Japonesa</span><span class="item-price">15,00€ <small>(Media 9,00€)</small></span></div>
+            <p class="item-desc">Con mayonesa japonesa.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Pimientos de Piquillo</span><span class="item-price">16,00€ <small>(Media 8,00€)</small></span></div>
+            <p class="item-desc">Rellenos de bacalao.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Pulpo a la Gallega</span><span class="item-price">16,00€ <small>(Media 9,50€)</small></span></div>
+            <p class="item-desc">Al estilo gallego con pimentón.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🐚</span> Moluscos</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Verduras a la Plancha</span><span class="item-price">16,00€ <small>(Media 9,00€)</small></span></div>
+            <p class="item-desc">Verduras de temporada a la plancha.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Jamón Ibérico de Bellota</span><span class="item-price">23,50€ <small>(Media 15,00€)</small></span></div>
+            <p class="item-desc">Con pan casero tostado y tomate.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TOSTAS (panel eliminado, integrado en Entrantes) -->
+
+
+      <!-- ENSALADAS -->
+      <div id="panel-ensaladas" class="menu-panel">
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Ensalada Valenciana</span><span class="item-price">9,00€</span></div>
+            <p class="item-desc">Lechuga, tomate, zanahoria, cebolla, huevo, aceitunas, atún.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🐟</span> Pescado</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Ensalada IL Forno</span><span class="item-price">9,50€</span></div>
+            <p class="item-desc">Lechuga, palmitos, maíz, zanahoria, pechuga de pollo, salsa rosa.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Ensalada de Manzana</span><span class="item-price">9,50€</span></div>
+            <p class="item-desc">Pechuga de pollo, manzana, nueces, zanahoria, lechuga, maíz, salsa de manzana.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🌰</span> Frutos secos</span>
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Ensalada César</span><span class="item-price">10,00€</span></div>
+            <p class="item-desc">Lechuga, pechuga a la plancha, queso parmesano, pan tostado, tomate cherry, salsa césar.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Nueva Ensalada de la Casa</span><span class="item-price">10,00€</span></div>
+            <p class="item-desc">Lechuga, palmitos, zanahoria, pechuga, maíz, gambas, remolacha, salsa rosa.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🦐</span> Crustáceos</span>
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DE CUCHARA -->
+      <div id="panel-cuchara" class="menu-panel">
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Consomé</span><span class="item-price">5,70€</span></div>
+            <p class="item-desc">Consomé clásico.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Sopa de Fideos</span><span class="item-price">6,00€</span></div>
+            <p class="item-desc">Sopa de fideos casera.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Gazpacho Andaluz</span><span class="item-price">6,20€</span></div>
+            <p class="item-desc">Solo en temporada. Frío y refrescante.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Sopa Castellana</span><span class="item-price">6,60€</span></div>
+            <p class="item-desc">Con huevo y jamón.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Sopa de Cebolla</span><span class="item-price">6,60€</span></div>
+            <p class="item-desc">Al estilo francés.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🌿</span> Apio</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- POSTRES -->
+      <div id="panel-postres" class="menu-panel">
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Bola de Helado</span><span class="item-price">2,50€</span></div>
+            <p class="item-desc">Chocolate, vainilla, nata, turrón, oreo, pistacho, fresa y limón.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Zumo de Naranja Natural</span><span class="item-price">3,00€</span></div>
+            <p class="item-desc">Recién exprimido.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Flan de la Casa</span><span class="item-price">3,80€</span></div>
+            <p class="item-desc">Casero.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Sorbete de Limón al Cava</span><span class="item-price">4,40€</span></div>
+            <p class="item-desc">Refrescante.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Tarta de Queso</span><span class="item-price">4,40€</span></div>
+            <p class="item-desc">Casera, al frío y con bizcocho.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Tiramisú</span><span class="item-price">4,70€</span></div>
+            <p class="item-desc">Receta de la casa.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Crema Catalana</span><span class="item-price">4,80€</span></div>
+            <p class="item-desc">Con azúcar caramelizado.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Piña Natural</span><span class="item-price">4,80€</span></div>
+            <p class="item-desc">Piña natural troceada.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Chocolate Liégeois</span><span class="item-price">5,00€</span></div>
+            <p class="item-desc">Helado de chocolate con nata.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Crepe de Chocolate</span><span class="item-price">5,00€</span></div>
+            <p class="item-desc">Con nata.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Crepe de Yema y Vainilla</span><span class="item-price">5,00€</span></div>
+            <p class="item-desc">Con helado de vainilla.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Dama Blanca</span><span class="item-price">5,00€</span></div>
+            <p class="item-desc">Helado con nata y chocolate caliente.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Coulant de Chocolate</span><span class="item-price">5,50€</span></div>
+            <p class="item-desc">Con corazón de chocolate fundente.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🌾</span> Gluten</span>
+              <span class="al"><span class="al-ico">🥚</span> Huevo</span>
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Café Irlandés</span><span class="item-price">5,60€</span></div>
+            <p class="item-desc">Con whisky y nata.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+              <span class="al"><span class="al-ico">🍷</span> Sulfitos</span>
+            </div>
+          </div>
+
+          <!-- SOLO EN TEMPORADA (dentro de Postres) -->
+          <div class="menu-item menu-item--subsection">
+            <div class="item-row"><span class="item-name" style="font-size:1rem;font-weight:700;color:var(--gold,#c9a96e);letter-spacing:.08em;text-transform:uppercase">Solo en temporada</span></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Fresas con Nata</span><span class="item-price">4,70€</span></div>
+            <p class="item-desc">Con nata montada.</p>
+            <div class="alergenos">
+              <span class="al"><span class="al-ico">🥛</span> Lácteos</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Melón</span><span class="item-price">4,70€</span></div>
+            <p class="item-desc">Fresco y de temporada.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-row"><span class="item-name">Sandía</span><span class="item-price">4,70€</span></div>
+            <p class="item-desc">Fresca y de temporada.</p>
+            <div class="alergenos">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VINOS -->
+  <section class="wine-wrap" id="vinos">
+    <div class="container">
+      <div class="wine-header">
+        <span class="section-label-light">Bodega</span>
+        <h2>Nuestra selección<br>de <em>vinos</em></h2>
+      </div>
+      <div class="wine-grid">
+        <div class="wine-col">
+          <div class="wine-col-head"><span>🍷</span><span class="wine-col-title">Vinos Tintos</span></div>
+          <div class="wine-item"><span class="wine-name">Don Octavio Tempranillo</span><span
+              class="wine-price">12,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Estola Crianza</span><span
+              class="wine-price">12,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Laminio Tempranillo</span><span
+              class="wine-price">13,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Finca Antigua Crianza</span><span
+              class="wine-price">16,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Librato Tempranillo Syrah</span><span class="wine-price">16,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Antonio Serrano Tempranillo</span><span class="wine-price">16,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Casas de Peña Garnacha Tintorera</span><span
+              class="wine-price">17,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Pago de la Jaraba</span><span class="wine-price">23,00€</span>
+          </div>
+        </div>
+        <div class="wine-col">
+          <div class="wine-col-head"><span>🥂</span><span class="wine-col-title">Vinos Blancos</span></div>
+          <div class="wine-item"><span class="wine-name">Don Octavio 5 Variedades</span><span
+              class="wine-price">12,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Estola Verdejo</span><span class="wine-price">12,00€</span>
+          </div>
+          <div class="wine-item"><span class="wine-name">Marqués de Toledo Verdejo</span><span
+              class="wine-price">12,00€</span></div>
+          <div class="wine-item"><span class="wine-name">PX 081 Semidulce Moscatel</span><span
+              class="wine-price">12,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Pajarete Verdejo-Afrutado</span><span class="wine-price">12,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Yugo Airén</span><span class="wine-price">12,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Laminio Gewürztraminer</span><span
+              class="wine-price">13,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Antonio Serrano Airén</span><span
+              class="wine-price">15,00€</span></div>
+          <div class="wine-item"><span class="wine-name">Pago de la Jaraba Sauvignon Blanc</span><span
+              class="wine-price">18,00€</span></div>
+        </div>
+        <div class="wine-col">
+          <div class="wine-col-head"><span>🌸</span><span class="wine-col-title">Vinos Rosados</span></div>
+          <div class="wine-item"><span class="wine-name">Aresán Rosado</span><span class="wine-price">12,00€</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERY -->
+  <section class="delivery" id="delivery">
+    <div class="container">
+      <span class="section-label">Servicio a Domicilio</span>
+      <div class="delivery-grid">
+        <div>
+          <h2>Tu restaurante<br><em>en casa</em></h2>
+          <p style="color:var(--muted);font-size:0.92rem;line-height:1.9">Toda la carta disponible para llevar. Los
+            mismos platos, la misma calidad, en la comodidad de tu hogar.</p>
+          <div class="phone-btns">
+            <a href="tel:+34967140681" class="phone-btn phone-btn-red">📞 967 140 681</a>
+            <a href="tel:+34967146410" class="phone-btn phone-btn-dark">📞 967 14 64 10</a>
+          </div>
+        </div>
+        <div class="delivery-item">
+          <div class="delivery-icon">👨‍🍳</div>
+          <h3>Personal</h3>
+          <p>Un equipo siempre dispuesto a ofrecerte el mejor servicio y la mejor experiencia. No se permitirán comentarios despectivos ni faltas de respeto a ninguno de los trabajadares en nuestro restaurante.
+          </p>
+        </div>
+        <div class="delivery-item">
+          <div class="delivery-icon">🛵</div>
+          <h3>Reparto</h3>
+          <p>Repartidores comprometidos con su trabajo. A veces los tiempos de espera pueden varíar también por las condiciones climatológicas. Coste de envío de 1.00€ en pedidos de menos de 25.00€.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALÉRGENOS -->
+  <section class="alergenos-section" id="alergenos">
+    <div class="container">
+      <div class="alergenos-header reveal">
+        <span class="section-label" style="display:block;text-align:center">Información alimentaria</span>
+        <h2>Tabla de <em>alérgenos</em></h2>
+        <p>Información sobre los 14 alérgenos de declaración obligatoria según el Reglamento (UE) Nº 1169/2011. Consulta
+          con nuestro personal ante cualquier duda.</p>
+      </div>
+
+      <div class="al-legend-grid">
+
+        <div class="al-legend-card reveal reveal-delay-1">
+          <span class="al-legend-emoji">🌾</span>
+          <span class="al-legend-name">Gluten</span>
+          <span class="al-legend-desc">Trigo, centeno, cebada, avena y sus variedades híbridas</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-1">
+          <span class="al-legend-emoji">🦐</span>
+          <span class="al-legend-name">Crustáceos</span>
+          <span class="al-legend-desc">Gambas, langostinos, cangrejos, langostas…</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-2">
+          <span class="al-legend-emoji">🥚</span>
+          <span class="al-legend-name">Huevos</span>
+          <span class="al-legend-desc">Huevos y productos a base de huevo</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-2">
+          <span class="al-legend-emoji">🐟</span>
+          <span class="al-legend-name">Pescado</span>
+          <span class="al-legend-desc">Pescados y productos a base de pescado</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-3">
+          <span class="al-legend-emoji">🥜</span>
+          <span class="al-legend-name">Cacahuetes</span>
+          <span class="al-legend-desc">Cacahuetes y productos a base de cacahuetes</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-3">
+          <span class="al-legend-emoji">🫘</span>
+          <span class="al-legend-name">Soja</span>
+          <span class="al-legend-desc">Soja y productos a base de soja</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-1">
+          <span class="al-legend-emoji">🥛</span>
+          <span class="al-legend-name">Lácteos</span>
+          <span class="al-legend-desc">Leche y sus derivados, incluida la lactosa</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-2">
+          <span class="al-legend-emoji">🌰</span>
+          <span class="al-legend-name">Frutos secos</span>
+          <span class="al-legend-desc">Almendras, avellanas, nueces, anacardos, pistachos…</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-3">
+          <span class="al-legend-emoji">🌿</span>
+          <span class="al-legend-name">Apio</span>
+          <span class="al-legend-desc">Apio y productos a base de apio</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-1">
+          <span class="al-legend-emoji">🟡</span>
+          <span class="al-legend-name">Mostaza</span>
+          <span class="al-legend-desc">Mostaza y productos a base de mostaza</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-2">
+          <span class="al-legend-emoji">🌱</span>
+          <span class="al-legend-name">Sésamo</span>
+          <span class="al-legend-desc">Semillas de sésamo y productos a base de sésamo</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-3">
+          <span class="al-legend-emoji">🍷</span>
+          <span class="al-legend-name">Sulfitos</span>
+          <span class="al-legend-desc">Dióxido de azufre y sulfitos en concentraciones &gt;10 mg/kg</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-1">
+          <span class="al-legend-emoji">🐚</span>
+          <span class="al-legend-name">Moluscos</span>
+          <span class="al-legend-desc">Mejillones, almejas, calamares, pulpos, ostras…</span>
+        </div>
+
+        <div class="al-legend-card reveal reveal-delay-2">
+          <span class="al-legend-emoji">🫛</span>
+          <span class="al-legend-name">Altramuces</span>
+          <span class="al-legend-desc">Altramuces y productos a base de altramuces</span>
+        </div>
+
+      </div>
+
+      <div class="al-disclaimer reveal">
+        <strong>⚠️ Aviso importante:</strong> La información sobre alérgenos que aparece en esta carta es orientativa.
+        Algunos platos pueden contener trazas de otros alérgenos debido a la manipulación en cocina. Si tiene una
+        alergia o intolerancia alimentaria grave, por favor comuníquenoslo antes de hacer su pedido. Nuestro personal
+        estará encantado de atenderle.
+        <br><br>
+        Información elaborada conforme al <strong>Reglamento (UE) Nº 1169/2011</strong> sobre la información alimentaria
+        facilitada al consumidor.
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section" id="como-llegar">
+    <div class="container">
+      <div class="map-header">
+        <span class="section-label" style="display:block;text-align:center">Ubicación</span>
+        <h2>Cómo <em>llegar</em></h2>
+        <p>Av. de los Reyes Católicos, 11 · 02600 Villarrobledo, Albacete</p>
+      </div>
+      <div class="map-layout">
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.45!2d-2.59963!3d39.26147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6a5a4e9b1b4a37%3A0x7c64bb2d7e2b9b70!2sAv.+de+los+Reyes+Cat%C3%B3licos%2C+11%2C+02600+Villarrobledo%2C+Albacete!5e0!3m2!1ses!2ses!4v1710877350000!5m2!1ses!2ses"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="IL Forno Villarrobledo">
+          </iframe>
+        </div>
+        <div class="map-info">
+          <div class="info-card">
+            <h3>📍 Dirección</h3>
+            <div class="info-row"><span class="info-icon">🏠</span><span>Av. de los Reyes Católicos, 11<br>02600
+                Villarrobledo, Albacete</span></div>
+            <div class="info-row"><span class="info-icon">🚉</span><span>A 50 m de la Estación de tren</span></div>
+            <div class="info-row"><span class="info-icon">🅿️</span><span>Zona de aparcamiento gratuita</span></div>
+          </div>
+          <div class="info-card">
+            <h3>🕐 Horario</h3>
+            <div class="info-row"><span class="info-icon">🌞</span><span>Mediodía: 13:00 – 16:00</span></div>
+            <div class="info-row"><span class="info-icon">🌙</span><span>Noche: 20:00 – 23:30</span></div>
+            <div class="info-row"><span class="info-icon">📅</span><span>Todos los días (festivos puede variar)</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <h3>📞 Contacto</h3>
+            <div class="info-row"><span class="info-icon">📱</span><a href="tel:+34967140681"
+                style="color:var(--terracotta);font-weight:600">967 140 681</a></div>
+            <div class="info-row"><span class="info-icon">📱</span><a href="tel:+34967146410"
+                style="color:var(--terracotta);font-weight:600">967 14 64 10</a></div>
+            <div class="info-row">
+              <span class="info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="url(#ig-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle">
+                  <defs>
+                    <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#f09433"/>
+                      <stop offset="25%" stop-color="#e6683c"/>
+                      <stop offset="50%" stop-color="#dc2743"/>
+                      <stop offset="75%" stop-color="#cc2366"/>
+                      <stop offset="100%" stop-color="#bc1888"/>
+                    </linearGradient>
+                  </defs>
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <circle cx="12" cy="12" r="4.5"></circle>
+                  <circle cx="17.5" cy="6.5" r="1" fill="url(#ig-grad)" stroke="none"></circle>
+                </svg>
+              </span>
+              <a href="https://www.instagram.com/ilfornovdo" target="_blank" rel="noopener"
+                style="color:var(--terracotta);font-weight:600;font-size:0.9rem">@ilfornovdo</a>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+de+los+Reyes+Cat%C3%B3licos+11+Villarrobledo+Albacete"
+            target="_blank" rel="noopener" class="map-btn">
+            🗺️ Abrir ruta en Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-strip" id="reservas">
+    <div class="container">
+      <h2>¿Reservas o pedidos?</h2>
+      <p>Llámanos y te atendemos con mucho gusto</p>
+      <div class="cta-buttons">
+        <a href="tel:+34967140681" class="btn-white">☎ 967 140 681</a>
+        <a href="tel:+34967146410" class="btn-outline-w">☎ 967 14 64 10</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">IL <span>FORNO</span></div>
+      <div class="footer-info">
+        Pizzería · Restaurante · Villarrobledo, Albacete<br>
+        Av. de los Reyes Católicos, 11 · Abierto todos los días
+      </div>
+      <div class="footer-copy">© IL Forno · Desde 1993</div>
+    </div>
+  </footer>
+
+  <script src="animation.js"></script>
+</body>
+
+</html>
